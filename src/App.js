@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, Link } from 'react-router-dom';
 import AddTransaction from './components/AddTransaction';
 import Dashboard from './components/Dashboard';
 import Login from './pages/Login';
@@ -21,37 +21,23 @@ function App() {
 
   return (
     <div className="App">
-      {token && (
-        <div
-          className="nav"
-          style={{
-            background: '#0071bd',
-            color: '#fff',
-            padding: '15px 20px',
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center'
-          }}
-        >
-          <h2 style={{ margin: 0, color: '#fff' }}>finSight</h2>
-          <div>
-            <span style={{ marginRight: '10px' }}>Hello, {user?.name}</span>
-            <button
-              onClick={logout}
-              style={{
-                padding: '6px 12px',
-                borderRadius: '5px',
-                border: 'none',
-                background: '#fff',
-                color: '#0071bd',
-                fontWeight: 'bold'
-              }}
-            >
-              Logout
-            </button>
-          </div>
+      {/* Top Navbar always visible */}
+      <header className="app-header">
+        <h2 className="logo">finSight</h2>
+        <div className="nav-right">
+          {token ? (
+            <>
+              <span>Hello, {user?.name}</span>
+              <button onClick={logout}>Logout</button>
+            </>
+          ) : (
+            <>
+              <Link to="/login">Login</Link>
+              <Link to="/register">Register</Link>
+            </>
+          )}
         </div>
-      )}
+      </header>
 
       <Routes>
         <Route

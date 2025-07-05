@@ -75,7 +75,7 @@
   box-shadow: 0 4px 12px rgba(0, 113, 189, 0.4);
 }
 
-/* ✅ Responsive styling */
+/*Responsive styling */
 @media (max-width: 480px) {
   .auth-form {
     padding: 1.5rem 1rem;
@@ -95,4 +95,15 @@
   .toggle-password {
     font-size: 1.1rem;
   }
+}
+.switch-auth {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.switch-auth a {
+  color: #0071bd;
+  text-decoration: none;
+  font-weight: bold;
 }

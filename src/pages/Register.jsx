@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import './AuthForm.css';
 
 // FontAwesome imports
@@ -69,6 +69,10 @@ const Register = () => {
       </div>
 
       <button type="submit">Register</button>
+
+      <p className="switch-auth">
+        Already have an account? <Link to="/login">Login</Link>
+      </p>
     </form>
   );
 };

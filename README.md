@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+# 💰 Personal Financial Dashboard 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The **Personal Financial Dashboard** is a full-stack app built by **Jagrav Jassi** to help users track their income and expenses efficiently. It includes charts, filters, summaries, and authentication — all built with React and Node.js.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Features
 
-### `npm start`
+- ➕ Add income and expense transactions  
+- 📅 Filter transactions by date  
+- ✏️ Edit and 🗑️ delete transactions  
+- 📈 Dynamic charts (Pie + Bar) using Recharts  
+- 🧾 Monthly summary: income, expense, and balance  
+- 🔐 JWT-based authentication (login/register)  
+- 📋 Latest 5 transactions preview + "Show All" toggle  
+- 🧠 Clean UI and responsive layout  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🏠 Dashboard Overview
 
-### `npm test`
+- **Transaction List** — add/edit/delete with timestamps  
+- **Charts** — visual breakdown of expenses by category  
+- **Monthly Summary** — income vs expense total per month  
+- **Date Filters** — filter transactions within a date range  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🖼️ Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Add Transaction  
+![Add](./public/s1.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Dashboard with Summary  
+![Dashboard](./public/s2.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Monthly Summary  
+![Monthly](./public/s3.png)
 
-### `npm run eject`
+### Charts (Pie & Bar)  
+![Charts](./public/s4.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Login  
+![Login](./public/s5.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Register  
+![Register](./public/s6.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+> Save your screenshots to `/public/` folder with the above names after capture.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## ⚙️ Installation & Setup
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 1. Clone the repo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+bash
+git clone https://github.com/yourusername/financial-dashboard.git
+cd financial-dashboard
 
-### Code Splitting
+### 2. Backend Setup
+(bash
+Copy code)
+cd server
+npm install
+npm run dev
+✅ Make sure MongoDB is running
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 3. Frontend Setup
+(bash
+Copy code)
+cd client
+npm install
+npm start
+React app runs at http://localhost:3000
+Backend server runs at http://localhost:5000
+✅ Make sure both servers are running
 
-### Analyzing the Bundle Size
+--- 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🛠️ Technologies Used
+Frontend: React, Context API, React Router, Recharts, HTML/CSS/JS
 
-### Making a Progressive Web App
+Backend: Node.js, Express, MongoDB, Mongoose, JWT
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Charts: Recharts (Bar, Pie)
 
-### Advanced Configuration
+Other:  HTML5 date inputs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🔒 Authentication Flow
+Register a new user with name, email, password
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Login returns a JWT token stored in Context
 
-### `npm run build` fails to minify
+Protected routes use ProtectedRoute to ensure authentication
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Logout clears the token and user state
+
+---
+
+## 📜 License
+This project is open-source and free to use under the MIT License.
+
+---
+
+## 👨‍💻 About the Developer
+
+Hi! I'm Jagrav Jassi, a passionate developer.
+FinSight is one of my portfolio projects built with React, Node, and MongoDB to demonstrate authentication, charting, and dynamic UI features
+
+## 📫 Feel free to connect:
+
+- GitHub: https://github.com/Jagrav-Jassi17
+- LinkedIn: https://www.linkedin.com/in/jagrav-jassi-737a11299
+
+
+> Give this repo a ⭐ if you found it useful!
