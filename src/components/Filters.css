@@ -1,0 +1,26 @@
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.filters div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filters label {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: #444;
+}
+
+.filters input[type="date"] {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
