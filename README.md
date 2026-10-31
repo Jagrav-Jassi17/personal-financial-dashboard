@@ -100,11 +100,6 @@ Logout clears the token and user state
 
 ---
 
-## 📜 License
-This project is open-source and free to use under the MIT License.
-
----
-
 ## 👨‍💻 About the Developer
 
 Hi! I'm Jagrav Jassi, a passionate developer.
